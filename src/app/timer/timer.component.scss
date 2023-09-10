@@ -1,0 +1,38 @@
+/* Style the main container */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+/* Style the countdown timer */
+.timer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Style the countdown timer values */
+.timer-content p {
+  padding: 10px;
+  margin: 5px;
+  font-size: 2rem;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  min-width: 60px;
+  text-align: center;
+}
+
+/* Style the "Countdown has expired!" message */
+.content h2 {
+  font-size: 1.5rem;
+  color: #ff5722; /* or any color of your choice */
+}
+
+.flex-justify-center {
+  display: flex;
+  justify-content: center;
+}

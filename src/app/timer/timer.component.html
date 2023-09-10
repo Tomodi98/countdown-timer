@@ -1,0 +1,26 @@
+<app-timer-edit
+  [(isVisible)]="isEditDialogVisible"
+  (isVisibleChange)="initTimer()"
+></app-timer-edit>
+
+<div class="content">
+  <div *ngIf="timeRemaining">
+    <div class="flex-justify-center">
+      <h2>Countdown Timer</h2>
+    </div>
+    <div class="timer-content">
+      <p>{{ timeRemaining.weeks }}w</p>
+      <p>{{ timeRemaining.days }}d</p>
+      <p>{{ timeRemaining.hours }}h</p>
+      <p>{{ timeRemaining.minutes }}m</p>
+      <p>{{ timeRemaining.seconds }}s</p>
+    </div>
+  </div>
+  <div *ngIf="!timeRemaining">
+    <h2>Countdown has expired!</h2>
+  </div>
+</div>
+
+<div class="flex-justify-center">
+  <p-button (click)="showEditDialog()">Edit timer</p-button>
+</div>
